@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = "http://localhost:8082/api";
+const API_BASE_URL = "https://roxiler-systems-cmvx.onrender.com/api";
 
 export const fetchTransactions = async (month, search, page, perPage) =>
   axios.get(`${API_BASE_URL}/transactions`, { params: { month, search, page, perPage } });
